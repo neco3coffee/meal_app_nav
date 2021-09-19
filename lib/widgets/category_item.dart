@@ -26,7 +26,8 @@ class CategoryItem extends StatelessWidget {
       splashColor: Theme.of(context).primaryColor,
       borderRadius: BorderRadius.circular(15),
       child: Container(
-        padding: const EdgeInsets.all(15),
+        padding: const EdgeInsets.all(
+            15), //constで宣言することで、rerunしたときに前に使用した値を使用できるのでメモリーの節約ににある。
         child: Text(
           title,
           style: Theme.of(context).textTheme.title,
@@ -40,7 +41,7 @@ class CategoryItem extends StatelessWidget {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
-          borderRadius: BorderRadius.circular(15),
+          borderRadius: BorderRadius.circular(40),
         ),
       ),
     );
